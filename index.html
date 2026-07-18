@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramu Bevara — DevOps & Cloud Engineer portfolio. Specializing in AWS, Docker, Kubernetes, CI/CD pipelines, and cloud infrastructure automation.">
+    <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Docker, Kubernetes, CI/CD, Portfolio, Ramu Bevara">
+    <meta name="author" content="Ramu Bevara">
+    <title>Ramu Bevara — DevOps & Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="bg-gradient-orb bg-orb-1"></div>
+        <div class="bg-gradient-orb bg-orb-2"></div>
+        <div class="bg-gradient-orb bg-orb-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>RB<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#contact" class="mobile-nav-cta">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name-text">Ramu Bevara</span>
+            </h1>
+            <div class="hero-title animate-on-scroll">
+                <span class="hero-title-prefix">I'm a </span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-tagline animate-on-scroll">
+                Building scalable cloud systems and automating deployments with modern DevOps practices
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1000">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Students Trained</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text-block glass-card">
+                        <p class="about-text">
+                            Dedicated and self-motivated <span class="text-highlight">DevOps Engineer</span> and trainer with experience mentoring over <span class="text-highlight">1000+ students</span> in DevOps, Java, and modern technologies.
+                        </p>
+                        <p class="about-text">
+                            Proficient in <span class="text-highlight">AWS, CI/CD pipelines, Docker, and containerization</span>. Certified AWS Cloud Practitioner with growing expertise in Kubernetes and GCP.
+                        </p>
+                        <p class="about-text">
+                            Passionate about <span class="text-highlight">continuous learning</span> and building scalable, efficient systems that drive real-world impact.
+                        </p>
+                        <div class="about-details">
+                            <div class="about-detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Andhra Pradesh, India</span>
+                            </div>
+                            <div class="about-detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>ram11421.cse@gmail.com</span>
+                            </div>
+                            <div class="about-detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>B.Tech in Computer Science</span>
+                            </div>
+                        </div>
+                        <div class="about-actions">
+                            <a href="resume.pdf" download class="btn btn-primary btn-sm">
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual animate-on-scroll">
+                    <div class="about-card-stack">
+                        <div class="floating-card glass-card fc-1">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Certified</span>
+                        </div>
+                        <div class="floating-card glass-card fc-2">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="floating-card glass-card fc-3">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="floating-card glass-card fc-4">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="floating-card glass-card fc-5">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Cloud Platforms -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-1">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS EC2</span>
+                        <span class="skill-tag">ECS</span>
+                        <span class="skill-tag">ECR</span>
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">VPC</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">GKE</span>
+                        <span class="skill-tag">Cloud Storage</span>
+                    </div>
+                </div>
+
+                <!-- Containers & Orchestration -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-2">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Helm</span>
+                        <span class="skill-tag">Container Registry</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD & Build -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-3">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>CI/CD & Build</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">Deployment Automation</span>
+                        <span class="skill-tag">Artifact Versioning</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Languages -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Backend & Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Core Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-5">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Branching Strategies</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap gradient-bg-6">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MS SQL Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ram89788" target="_blank" rel="noopener" class="project-link-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Employee Management System</h3>
+                    <p class="project-description">
+                        Built a full-stack employee management system with CRUD operations and implemented CI/CD pipelines for automated deployment using modern DevOps toolchain.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Jenkins</span>
+                        <span>Maven</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-type">
+                            <i class="fas fa-server"></i> Full Stack + DevOps
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ram89788" target="_blank" rel="noopener" class="project-link-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Automated Deployment Pipeline</h3>
+                    <p class="project-description">
+                        Designed and implemented a complete CI/CD pipeline automating build, testing, and deployment of Java applications using modern DevOps tools and cloud infrastructure.
+                    </p>
+                    <div class="project-tech">
+                        <span>Git</span>
+                        <span>Maven</span>
+                        <span>Jenkins</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-type">
+                            <i class="fas fa-infinity"></i> DevOps Pipeline
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-badge">Current</div>
+                        <h3 class="timeline-title">Freelance Trainer</h3>
+                        <span class="timeline-company">
+                            <i class="fas fa-building"></i> Coign | VN Tech | Echo Brains
+                        </span>
+                        <span class="timeline-meta">
+                            <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana
+                            <span class="meta-divider">•</span>
+                            <i class="fas fa-calendar-alt"></i> Sep 2022 – Present
+                        </span>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Trained <strong>1000+ students</strong> in DevOps, Java, and modern technologies
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Designed hands-on labs for <strong>Git, Jenkins, Docker, AWS</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Mentored students in projects, GitHub usage, and interview preparation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon gradient-bg-1">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <p class="education-institution">Satya Institute of Technology and Management, Vizianagaram</p>
+                        <div class="education-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2021 – 2024</span>
+                            <span class="education-score"><i class="fas fa-star"></i> CGPA: 8.05</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon gradient-bg-2">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Diploma in Mechanical Engineering</h3>
+                        <p class="education-institution">Kakinada Institute of Engineering and Technology</p>
+                        <div class="education-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2018 – 2021</span>
+                            <span class="education-score"><i class="fas fa-star"></i> 75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon gradient-bg-3">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>SSC (Secondary School Certificate)</h3>
+                        <p class="education-institution">Maharshi Vidhyalaya, Kotturu</p>
+                        <div class="education-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2017 – 2018</span>
+                            <span class="education-score"><i class="fas fa-star"></i> CGPA: 9.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <span class="cert-date">July 2023</span>
+                    <div class="cert-badge verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-salesforce"></i>
+                    </div>
+                    <h3>Salesforce Developer</h3>
+                    <p class="cert-issuer">SmartBridge Internship</p>
+                    <span class="cert-date">Completed</span>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java Programming</h3>
+                    <p class="cert-issuer">Udemy</p>
+                    <span class="cert-date">Completed</span>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Fundamentals</h3>
+                    <p class="cert-issuer">Infosys Springboard</p>
+                    <span class="cert-date">Completed</span>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i> Certified
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-section animate-on-scroll">
+                <h3 class="achievements-title">
+                    <i class="fas fa-trophy"></i> Notable Achievements
+                </h3>
+                <div class="achievements-grid">
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                        <span>24-Hour Hackathon Participant</span>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                        <span>District-Level Kabaddi Winner</span>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fab fa-aws"></i></div>
+                        <span>AWS Certified Professional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card glass-card">
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-bg-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:ram11421.cse@gmail.com">ram11421.cse@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-bg-2">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918978801174">+91 8978801174</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-bg-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Location</span>
+                                <span>Andhra Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links animate-on-scroll">
+                        <a href="https://linkedin.com/in/ramu-bevara-71b888239" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Ram89788" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ram11421.cse@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+918978801174" class="social-link" title="Phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Ramu, I'd love to discuss an opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>RB<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by <strong>Ramu Bevara</strong>
+                </p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/ramu-bevara-71b888239" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Ram89788" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ram11421.cse@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 Ramu Bevara. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
